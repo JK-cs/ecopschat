@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     "django_bootstrap5",
+    "ouncechat",
 ]
 
 MIDDLEWARE = [
