@@ -4,8 +4,15 @@ from chat.forms import RoomForm
 from chat.models import Room
 
 # Create your views here.
+#index뷰 수정
+#Room 목록 조회 후 chat/index.html템플릿을 통해 Room목록 렌더링
 def index(request):
-    return render(request, "chat/index.html")
+    #Room쿼리셋을 생성, context data로 room_list 이름으로 넘김
+    room_qs = Room.objects.all()
+    return render(request, "chat/index.html",{
+        "room_list":room_qs,
+    })
+
 
 
 def room_new(request):
