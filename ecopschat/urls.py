@@ -25,4 +25,5 @@ urlpatterns = [
     path('chat/', include('chat.urls')),
     path('', include('app.urls')),
     path("", RedirectView.as_view(pattern_name="chat:index"),name="root"),
+    path("accounts/", include("accounts.urls")),
 ]
