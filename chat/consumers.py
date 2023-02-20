@@ -32,16 +32,20 @@ class ChatConsumer(JsonWebsocketConsumer):
             )
 
     def receive_json(self, content, **kwargs):
+        #메세지를 group_send 시 현 유저의 username을 같이 전달토록 함
+        user=self.scope["user"]
+
         _type = content["type"]
 
         if _type == "chat.message":
             message = content["message"]
-
+            sender=user.username
             async_to_sync(self.channel_layer.group_send)(
                 self.group_name,
                 {
                     "type": "chat.message",
                     "message": message,
+                    "sender": sender,
                 },
             )
         else:
@@ -50,4 +54,5 @@ class ChatConsumer(JsonWebsocketConsumer):
         self.send_json({
             "type":"chat.message",
             "message":message_dict["message"],
+            "sender": message_dict["sender"],
         })
