@@ -43,10 +43,10 @@ def room_chat(request:HttpRequest, room_pk: int)->HttpResponse:
     })
 
 @login_required
-def room_delete(request, room_pk):
+def room_delete(request:HttpRequest, room_pk: int)->HttpResponse:
     room = get_object_or_404(Room, pk=room_pk)
 
-    if room.owner !=request.user:
+    if room.owner != request.user:
         messages.error(request, "채팅방 소유자가 아닙니다.")
         return redirect("chat:index")
 
