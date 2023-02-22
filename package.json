@@ -1,0 +1,19 @@
+{
+  "name": "ecopschat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/11th-E-COPS/3_Idiots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/11th-E-COPS/3_Idiots/issues"
+  },
+  "homepage": "https://github.com/11th-E-COPS/3_Idiots#readme"
+}
