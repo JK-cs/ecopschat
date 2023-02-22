@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://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@github.com/11th-E-COPS/3_Idiots.git"
+    "url": "git+https://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@github.com/11th-E-COPS/ecopschat.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/11th-E-COPS/3_Idiots/issues"
+    "url": "https://github.com/11th-E-COPS/ecopschat/issues"
   },
-  "homepage": "https://github.com/11th-E-COPS/3_Idiots#readme"
+  "homepage": "https://github.com/11th-E-COPS/ecopschat#readme"
 }
