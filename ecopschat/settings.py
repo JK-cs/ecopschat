@@ -55,7 +55,7 @@ SECRET_KEY = os.environ.setdefault('DJANGO_SECRET_KEY', 'django-insecure-ccpa_dg
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.setdefault('DJANGO_DEBUG', True))
+DEBUG = bool(os.environ.setdefault('DJANGO_DEBUG', "True"))
 
 ALLOWED_HOSTS = ['*']
 
