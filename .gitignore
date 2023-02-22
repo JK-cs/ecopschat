@@ -1,3 +1,4 @@
+*.pyc
 __pycache__
 db.sqlite3
 /static
@@ -6,3 +7,4 @@ venv
 .venv
 .idea
 .vscode
+local_settings.py
