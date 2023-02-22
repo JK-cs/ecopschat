@@ -1,0 +1,1 @@
+web: gunicorn ecopschat.wsgi --log-file -
