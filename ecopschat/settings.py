@@ -55,7 +55,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-ccpa_dgd-*m0a)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.envorion.get('DJANGO_DEBUG', True))
+DEBUG = bool(os.envorion.setdefault('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = ['*']
 
