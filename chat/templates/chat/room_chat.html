@@ -101,10 +101,7 @@
 
             const { message } = props;
             console.log("웹소켓으로 전송할 메세지 :", message);
-<<<<<<< HEAD
-=======
 
->>>>>>> ab72793 (주석 제거 버전)
             this.ws.send(JSON.stringify({
                 type : "chat.message",
                 message : message,
