@@ -14,3 +14,4 @@ venv/
 .vscode
 local_settings.py
 postgresql_15.exe
+secrets.json
