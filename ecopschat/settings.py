@@ -62,7 +62,7 @@ def get_secret(setting, secrets=secrets):
         error_msg = "set the {} environment variable".format(setting)
         raise ImproperlyConfigured(error_msg)
 
-SECRET_KEY = get_secret("SECRET_KEY")
+SECRET_KEY = "django-insecure-ccpa_dgd-*m0a)#nd#u&bhrt&$#i5&u*eu&l4$au9+z-748(&0"
 
 
 
