@@ -115,12 +115,14 @@ ASGI_APPLICATION = 'ecopschat.asgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ecopschat',
-        'USER': 'name',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'ounce_db',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'ecops123',
+        # 'HOST': 'localhost',
+        # 'PORT': 5432,
     }
 }
 
