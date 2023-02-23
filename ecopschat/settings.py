@@ -26,10 +26,7 @@ env_path=BASE_DIR / ".env"
 
 if env_path.exists():
     with env_path.open(encoding="utf8") as f:
-    #디폴트 동작으로 동일 이름의 환경변수가 이미 등록된 경우, 덮어쓰기x
      env.read_env(f, overwrite=True)
-    # CHANNEL_LAYER_REDIS_URL 환경변수가 설정되어있다면 로딩/파싱하여,
-
 
 # django_channels_layer
 if "CHANNEL_LAYER_REDIS_URL" in env:
@@ -139,7 +136,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'ewhaecops!',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
