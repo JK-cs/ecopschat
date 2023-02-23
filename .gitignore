@@ -15,4 +15,3 @@ venv/
 local_settings.py
 postgresql_15.exe
 secrets.json
-.env

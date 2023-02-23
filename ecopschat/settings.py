@@ -13,7 +13,6 @@ import json
 import os.path
 from pathlib import Path
 import dj_database_url
-import my_settings
 import django_heroku
 import environ
 from django.core.exceptions import ImproperlyConfigured
@@ -27,7 +26,7 @@ env_path=BASE_DIR / ".env"
 
 if env_path.exists():
     with env_path.open(encoding="utf8") as f:
-    # 디폴트 동작으로 동일 이름의 환경변수가 이미 등록된 경우, 덮어쓰기x
+    #디폴트 동작으로 동일 이름의 환경변수가 이미 등록된 경우, 덮어쓰기x
      env.read_env(f, overwrite=True)
     # CHANNEL_LAYER_REDIS_URL 환경변수가 설정되어있다면 로딩/파싱하여,
 
@@ -134,13 +133,13 @@ ASGI_APPLICATION = 'ecopschat.asgi.application'
 
 
 DATABASES = {
-    'default' : {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env("DB_NAME"),
-        'USER': env("DB_USER"),
-        'PASSWORD': env("DB_PW"),
-        'HOST': env("DB_HOST"),
-        'PORT': env("DB_PORT"),
+        'NAME': 'ounce_db',
+        'USER': 'postgres',
+        'PASSWORD': 'ewhaecops!',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
