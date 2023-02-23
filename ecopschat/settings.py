@@ -68,9 +68,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-
-ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','.herokuapp.com']
 
 
 # Application definition
@@ -136,7 +134,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'ewhaecops!',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
